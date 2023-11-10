@@ -28,8 +28,8 @@ export class Match {
 		const team1Goals = Math.floor(team1GoalChance * (team1.strength / 100));
 		const team2Goals = Math.floor(team2GoalChance * (team2.strength / 100));
 
-		team1.processMatchResult(team1Goals, team2Goals);
-		team2.processMatchResult(team2Goals, team1Goals);
+		team1.processMatchResult(team1Goals, team2Goals, team2.name);
+		team2.processMatchResult(team2Goals, team1Goals, team1.name);
 
 		return {
 			homeTeam: team1.name,
