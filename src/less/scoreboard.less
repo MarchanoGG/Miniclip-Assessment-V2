@@ -24,6 +24,9 @@
         &:first-child {
             text-align: center;
         }
+        &:nth-child(2) {
+            min-width: 62px;
+        }
         &:last-child {
             font-weight: 700;
         }
@@ -35,5 +38,11 @@
         object-fit: contain;
         width: 20px;
         height: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .scoreboard__table * {
+        font-size: 12px;
     }
 }

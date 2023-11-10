@@ -1,6 +1,7 @@
 .rounds {
-	// background-color: rgba(2,41,82,.65);
-    width: 300px
+    transition: all .3s ease;
+    min-width: 300px;
+    width: 300px;
 }
 
 .rounds__title {
@@ -32,5 +33,19 @@
     th, td {
         padding: 2px 5px;
         text-align: left;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .rounds {
+        min-width: 250px;
+        width: 250px;
+    }
+    .round__title {
+        font-size: 16px;
+    }
+    .round__table * {
+        font-size: 14px;
     }
 }
