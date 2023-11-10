@@ -3,7 +3,7 @@ import './less/main.less';
 import { Team } from './ts/team'; 
 import { Match } from './ts/match'; 
 import { UI } from './ts/ui';
-import { Standings } from './ts/standings'; // Import the Standings class
+import { Standings } from './ts/standings';
 
 const teamA = new Team('Team A', 95); 
 const teamB = new Team('Team B', 80);
